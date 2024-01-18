@@ -58,6 +58,10 @@ PRODUCT_PACKAGES += \
     WifiOverlayXagaIn \
     WifiOverlayXagaPro
 
+# Radio (Engineer Mode)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.engineermode.xml
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.project.rc \
